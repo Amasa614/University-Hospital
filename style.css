@@ -363,3 +363,13 @@ h3 {
     font-weight: 600;
     margin: 10px;
 }
+
+.col-icons {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    color: gold;
+    flex: 0, 0, 50%;
+}
+

@@ -10,12 +10,38 @@
 <script src="https://kit.fontawesome.com/17485b826b.js" crossorigin="anonymous"></script>
     </head>
     <body>
+        
+<script type="text/javascript">
+    if (typeof(window.Appointy) === 'undefined') {
+        window.Appointy = {};
+    }
+    window.Appointy.config = {
+        business: 'Jeffery',
+        defaultTab: 'Schedule',
+        extraParameter: '',
+        buttonImg: '',
+        modal: {
+            height: '100%',
+            width: '100%'
+        },
+        buttonAlign: "Right", /* You may set 'Left' or 'Right', default value is 'Right'*/
+        buttonPosition: "40", /*You may set 'Top', 'Bottom' or any number from 0 to 100, default value is '40'*/
+    };
+    jQuery(document).ready(function() {
+        jQuery("#bookAppointy").click(function(){
+            jQuery("#app-widget-btn").click();
+            return false;
+        });
+    });
+</script>
+<script type="text/javascript" src="https://cdn.appointy.com/web/blob-web/js/appointy-widget.js"></script>
+                                            
         <section>
             <nav>
                 <a href="services.html"><img src="Images/logo.png"></a>
                 <div class="nav-links" id="navLinks">
                     <ul>
-                        <li><a href="services.html">Home</a></li>
+                        <li><a href="test.html">Home</a></li>
                         <li><a href="about.html">About Us</a></li>
                         <li><a href="services.html">Our Services</a></li>
                         <li><a href="">Students</a></li>

@@ -275,7 +275,6 @@ display: flex;
 flex-direction: row;
 align-items: flex-start;
 padding: 0px;
-
 position: absolute;
 width: 163px;
 height: 48px;
@@ -283,32 +282,6 @@ left: 71px;
 top: 347px;
 }
 
-
-a.button5{
-    height: 48px;
-    width: auto;
-    border-radius: 8px;
-    align-items: center;
-    position: absolute;
-    display:inline-block;
-    padding:0.46em 1.6em;
-    border:0.1em #B49A64;
-    margin:0 0.2em 0.2em 0;
-    border-radius:0.12em;
-    box-sizing: border-box;
-    text-decoration:none;
-    font-weight:300;
-    color: white;
-    text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
-    background-color:#FFFFFF;
-    text-align:center;
-    transition: all 0.15s;
-}
-    a.button5:hover {
-    text-shadow: 0 0 2em rgba(255,255,255,1);
-    color:#FFFFFF;
-    border-color:#FFFFFF;
-}
 
 .course{
     width: 85%;
@@ -322,6 +295,7 @@ a.button5{
     color: #003666;
     bottom: 64px;
 }
+
 
 .course .p{
     color: black;
@@ -371,5 +345,59 @@ h3 {
     padding-left: 15px;
     color: gold;
     flex: 0, 0, 50%;
+}
+
+.compass {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 77px;
+    position: relative;
+    width: 100%;
+    height: 408px;
+
+}
+.container-1 {
+    position: relative;
+    width: 200px;
+    height: auto;
+    top: 98px;
+    display: grid;
+    gap: 8px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+
+.box {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(2.5px);
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    width: 150px;
+    height: 150px;
+    box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, 0.08);
+}
+
+.box svg {
+    align-items: center;
+    height: 48px;
+    width: 48px;
+    color: #1062C9;
+    margin-top: 24px;
+}
+
+.box h3 {
+    color: #000000;
+    padding: auto;
+    font-size: 16px;
+}
+
+.box p {
+    color: greenyellow;
+    font-size: 14px;
+    line-height: 1.6;
 }
 

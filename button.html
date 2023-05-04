@@ -36,6 +36,33 @@
                         <h3>Appointments</h3>
                         <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                         <a href="#" class="btn"> read more</a>
+
+                        
+<script type="text/javascript">
+    if (typeof(window.Appointy) === 'undefined') {
+        window.Appointy = {};
+    }
+    window.Appointy.config = {
+        business: 'Jeffery',
+        defaultTab: 'Schedule',
+        extraParameter: '',
+        buttonImg: '',
+        modal: {
+            height: '100%',
+            width: '100%'
+        },
+        buttonAlign: "Right", /* You may set 'Left' or 'Right', default value is 'Right'*/
+        buttonPosition: "40", /*You may set 'Top', 'Bottom' or any number from 0 to 100, default value is '40'*/
+    };
+    jQuery(document).ready(function() {
+        jQuery("#bookAppointy").click(function(){
+            jQuery("#app-widget-btn").click();
+            return false;
+        });
+    });
+</script>
+<script type="text/javascript" src="https://cdn.appointy.com/web/blob-web/js/appointy-widget.js"></script>
+                                            
                         
             </div>
         </div>

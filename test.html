@@ -9,7 +9,34 @@
 <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="fontawesome-free-6.4.0-web/css/all.css">
     </head>
+                                            
     <body>
+        
+<script type="text/javascript">
+    if (typeof(window.Appointy) === 'undefined') {
+        window.Appointy = {};
+    }
+    window.Appointy.config = {
+        business: 'Jeffery',
+        defaultTab: 'Schedule',
+        extraParameter: '',
+        buttonImg: '',
+        modal: {
+            height: '100%',
+            width: '100%'
+        },
+        buttonAlign: "Right", /* You may set 'Left' or 'Right', default value is 'Right'*/
+        buttonPosition: "40", /*You may set 'Top', 'Bottom' or any number from 0 to 100, default value is '40'*/
+    };
+    jQuery(document).ready(function() {
+        jQuery("#bookAppointy").click(function(){
+            jQuery("#app-widget-btn").click();
+            return false;
+        });
+    });
+</script>
+<script type="text/javascript" src="https://cdn.appointy.com/web/blob-web/js/appointy-widget.js"></script>
+                                            
         <section>
             <nav>
                 <a href="services.html"><img src="Images/logo.png"></a>
@@ -33,7 +60,7 @@
                     </div>
                     <div class="container-1">
                         <div class="box">
-                            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M128 0c17.7 0 32 14.3 32 32V64H288V32c0-17.7 14.3-32 32-32s32 14.3 32 32V64h48c26.5 0 48 21.5 48 48v48H0V112C0 85.5 21.5 64 48 64H96V32c0-17.7 14.3-32 32-32zM0 192H448V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V192zM329 305c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-95 95-47-47c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l64 64c9.4 9.4 24.6 9.4 33.9 0L329 305z"/></svg>
+                            <a href="https://booking.appointy.com/en-US/jeffery/bookings/calendar"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M128 0c17.7 0 32 14.3 32 32V64H288V32c0-17.7 14.3-32 32-32s32 14.3 32 32V64h48c26.5 0 48 21.5 48 48v48H0V112C0 85.5 21.5 64 48 64H96V32c0-17.7 14.3-32 32-32zM0 192H448V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V192zM329 305c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-95 95-47-47c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l64 64c9.4 9.4 24.6 9.4 33.9 0L329 305z"/></svg>
                                 <h3>APPOINTMENTS</h3>
                             </a>
                         </div>
@@ -49,7 +76,7 @@
                             </div>
                             <div class="box">
                                 <a href="#"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M0 48C0 21.5 21.5 0 48 0H368c26.5 0 48 21.5 48 48V96h50.7c17 0 33.3 6.7 45.3 18.7L589.3 192c12 12 18.7 28.3 18.7 45.3V256v32 64c17.7 0 32 14.3 32 32s-14.3 32-32 32H576c0 53-43 96-96 96s-96-43-96-96H256c0 53-43 96-96 96s-96-43-96-96H48c-26.5 0-48-21.5-48-48V48zM416 256H544V237.3L466.7 160H416v96zM160 464a48 48 0 1 0 0-96 48 48 0 1 0 0 96zm368-48a48 48 0 1 0 -96 0 48 48 0 1 0 96 0zM176 80v48l-48 0c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h48v48c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V192h48c8.8 0 16-7.2 16-16V144c0-8.8-7.2-16-16-16H240V80c0-8.8-7.2-16-16-16H192c-8.8 0-16 7.2-16 16z"/></svg>
-                                    <h3>CONTACT US</h3>
+                                    <h3>EMERGENCY SERVICES</h3>
                                     </a>
                                 
                     </div>
@@ -86,12 +113,62 @@
                 <p>he purpose of our self service platform is to empower patients and healthcare providers to take control of their healthcare needs. 
                     <br> By utilizing our online features, you can streamline your appointment booking process, 
                     <br> gain insights into your symptoms, and access clinical tools to diagnose and treat medical conditions efficiently.</p>
+</div>
+</div>
+           </section>
+           <footer class="footer-format">
+            <div class="line"></div
 
+                    div class="container">
+                        <div class="col">
+                          <h4>University of Ghana</h4>
+                          <div class="dash-footer"></div>
+                          <ul>
+                            <li>Progressive and Sustainable Transformation <br> 
+                                Of University Health Services into a Vibrant <br>
+                                Centre Of Excellence and Pivot for Public <br>
+                                Health Sector Development</li>
+
+                            <li>University of Ghana Medical <br>
+                                Centre LTD</li>
+
+                            <li>Post Office Box LG 25</li>
+                            <li>Accra, Ghana</li>
+                            <li>West Africa.</li>
+                          </ul>
+
+                        </div>
+                        <div class="col">
+                            <h4>Research Directorate</h4>
+                            <div class="dash-footer"></div>
+                          <ul>
+                            <li>+233 302 550843</li>
+                            <li>+233 302 550843</li>
+                            <li>+233 302 550843</li>
+                            <li>+233 302 550843</li>
+                            <li>Get in touch</li>
+                          </ul>
+
+                        </div>
+                        <div class="col">
+                          <h4>Quick Links</h4>
+                            <div class="dash-footer"></div>
+                          <ul>
+                            <li>Home</li>
+                            <li>About</li>
+                            <li>Our Services</li>
+                            <li>Students</li>
+                            <li>Staff</li>
+                          </ul>
+                        </div>
+                    </div>
+                </div>
+
+        </footer>
             </div>
         </div>
-
-
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/brands.min.js" integrity="sha512-KYlRezs7yAa59UnX6zAvY7I96Te02kycQn02Sr6FU/fBpxcXAwumRe5DHVrqVnWTt9HY/PktrAPZzSe9UE1Yxg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-            
             </body>
+
+
+
             </html>

@@ -295,7 +295,7 @@ top: 347px;
 .course h1 {
     font-size: 64px;
     font-weight: 650;
-    color: #003666;
+    color: #086972;
     bottom: 48px;
     position: relative;
 }
@@ -343,6 +343,12 @@ top: 347px;
     border-radius: 8px;
 
 }
+
+.course-col:hover {
+    transform: translateY(-12px);
+    transition: all 0.2s ease-in-out;
+}
+
 
 h3 {
     text-align: center;
@@ -398,7 +404,7 @@ h3 {
     align-items: center;
     height: 48px;
     width: 48px;
-    color: #1062C9;
+    fill: #086972;
     margin-top: 24px;
 }
 
@@ -500,6 +506,6 @@ background: #FFFFFF;
     text-align: center;
     margin-top: 48px;
     font-size: 64px;
-    font-weight: 600;
-    color: #003666
+    font-weight: 700;
+    color: #086972
  }

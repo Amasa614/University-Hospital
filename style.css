@@ -36,7 +36,7 @@ nav img {
     content: '';
     width: 0%;
     height: 2px;
-    background: #B49A64;
+    background: #086972;
     display: block;
     margin: auto;
     transition: 0.5s;
@@ -79,14 +79,14 @@ line-height: 56px;
 display: flex;
 align-items: center;
 text-align: center;
-color: #003666;
+color: #086972;
  }
 
 
  .dash {
 width: 100px;
 height: 6px;
-background: #C1A783;
+background: #086972;
  }
 
 .description p {
@@ -115,14 +115,14 @@ line-height: 56px;
 display: flex;
 align-items: center;
 text-align: center;
-color: #003666;
+color: #086972;
  }
 
 
  .dash {
 width: 100px;
 height: 6px;
-background: #C1A783;
+background: #086972;
  }
 
     .steps h3 {
@@ -166,13 +166,13 @@ align-items: auto;
 position: relative;
 width: 100%;
 height: 10px;
-background: #B49A64;
+background: #086972;
 }
 
 .dash-footer {
 width: 50px;
 height: 2px;
-background: #C1A783;
+background: #086972;
 }
 
 
@@ -180,7 +180,7 @@ background: #C1A783;
     width: 100%;
     position: absolute;
     height: 500px;
-    background-color: #001c42;
+    background-color: #F1F7F6;
     margin-top: 48px;
  }
 
@@ -216,7 +216,7 @@ background: #C1A783;
     line-height: 24px;
     display: flex;
     align-items: center;
-    color: #FFFFFF;
+    color: #086972;
 
   }
 
@@ -229,7 +229,7 @@ background: #C1A783;
 
   .col ul li {
     list-style: none;
-    color: #B49A64;
+    color: black;
     font-size: 14px;
     font-family: inherit;
     padding: 5px 0px 5px 0px;
@@ -241,17 +241,17 @@ background: #C1A783;
   }
 
   .col ul li:hover {
-    color: #ffffff;
+    color: #086972;
     transition: .1s;
     -webkit-transition: .1s;
     -moz-transition: .1s;
   }
 
   .header-main {
-    min-height: 100vh;
+    height: 580px;
     width: 100%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(Images/big\ header.png);
     background-position: center;
+    background-color: #F1F7F6;
     background-size: cover;
     position: relative;
 }
@@ -268,7 +268,7 @@ font-size: 64px;
 line-height: 76px;
 display: flex;
 align-items: center;
-color: #FFFFFF;
+color: #086972;
 
 }
 
@@ -351,14 +351,6 @@ h3 {
     align-items: center;
 }
 
-.col-icons {
-    position: relative;
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    color: gold;
-    flex: 0, 0, 50%;
-}
 
 .compass {
     display: flex;
@@ -432,7 +424,7 @@ h3 {
 .c-btn{
     border: none;
     height: 48px;
-    background-color: #B49A64;
+    background-color: #086972;
     padding: 12px 48px 12px 24px;
     border-radius: 4px;
     color: #fff;
@@ -444,7 +436,7 @@ h3 {
   }
 
   .c-btn:hover {
-    background-color: #C1A783;
+    background-color: #086972;
     height: 50px;
     width: 105%;
 

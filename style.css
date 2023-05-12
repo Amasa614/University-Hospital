@@ -200,9 +200,9 @@ background: #086972;
     width: auto;
     height: auto;
     float: left;
-    box-sizing: border-box;
-    -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
     padding: 0px 20px 20px 20px;
     
   }
@@ -234,17 +234,17 @@ background: #086972;
     font-family: inherit;
     padding: 5px 0px 5px 0px;
     cursor: pointer;
-    transition: .2s;
-    -webkit-transition: .2s;
     -moz-transition: .2s;
+    -webkit-transition: .2s;
+    transition: .2s;
     margin-top: 12px;
   }
 
   .col ul li:hover {
     color: #086972;
-    transition: .1s;
-    -webkit-transition: .1s;
     -moz-transition: .1s;
+    -webkit-transition: .1s;
+    transition: .1s;
   }
 
   .header-main {
@@ -508,4 +508,184 @@ background: #FFFFFF;
     font-size: 64px;
     font-weight: 700;
     color: #086972
+ }
+
+ .login-form {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .form {
+    width: 400px;
+    height: auto;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 15%;
+    left: 35%;
+ }
+
+ .form-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 24px;
+ }
+
+ input {
+    width: 80%;
+    height: 40px;
+    display: inline-flex;
+    margin: 20px auto;
+    text-align: left;
+    padding: 8px 10px;
+    border-color: #086972;
+    border-radius: 4px;
+    border: 1px solid black;
+    
+ }
+
+ .submit-btn {
+    width: 80%;
+    height: 40px;
+    display: flex;
+    margin: 20px auto;
+    text-align: center;
+    padding: 8px 10px;
+    background: #086972;
+    border: none;
+    border-radius: 5px;
+    justify-content: center;
+ }
+
+ .submit-btn:hover {
+    background: #0e8a96;
+    color: white;
+  }
+
+  input::placeholder {
+    color: rgb(182, 179, 179);
+  }
+
+  input:focus {
+    background: white;
+    color: #086972;
+    border: 1.8px solid #086972
+  }
+
+  input:focus::placeholder {
+    color: black ;
+  }
+
+  .submit-btn {
+    width: 344px;
+    height: 50px;
+    padding: 0 20px;
+    cursor: pointer;
+    margin: 16px auto;
+    color: white;
+    align-items: center;
+    font-size: 16px;
+  }
+
+  .login-link {
+    text-align: center;
+    text-transform: capitalize;
+    text-decoration: underline;
+    color: #086972;
+    display: block;
+    margin-top: 16px;
+  }
+
+  .alert-box {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%);
+    min-width: 150px;
+    max-width: 90%;
+    height: auto;
+    padding: 10px;
+    margin: auto;
+    color: white;
+    background: red;
+    text-align: center;
+    transition: 0.2s;
+
+  }
+
+  .nav-link {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    position: relative;
+    width: 100%;
+    height: 100.05px;
+    left: calc(50% - 1293px/2 - 0.5px);
+    top: 39px;
+  }
+
+  .header-btns {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+    width: 224px;
+    height: 40px;
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    flex: 1;
+    text-align: right;
+  }
+
+  .header-login{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 16px;
+    gap: 8px;
+    width: 108px;
+    height: 48px;
+    background: #086972;
+    border-radius: 8px;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+
+  .header-signup {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 16px;
+    gap: 8px;
+    width: 108px;
+    height: 48px;
+    background: white;
+    border-radius: 8px;
+    border: 2px solid #086972;
+    color: black;
+    cursor: pointer;
+  }
+
+ .name {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;    
+    padding: 0px;
+    gap: 12px;
+    width: 85%;
  }

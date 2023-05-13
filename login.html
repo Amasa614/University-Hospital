@@ -11,6 +11,43 @@
 <script src="script.js"></script>
     </head>                                  
     <body>
+<script>
+    const name = document.querySelector('.name') || null;
+    const email = document.querySelector('.email');
+    const password = document.querySelector('.password');
+    const submitBtn = document.querySelector('.submit-btn');
+
+    if(name == null){ // means login page is open
+
+    } else { // means regsiter page is open
+
+        submitBtn.addEventListener('click', () => {
+            fetch('/login-user', {
+                method: 'post',
+                headers: new Headers({'Content-Type': 'application/json'}),
+                body: JSON.stringify({
+                    email: email.value,
+                    password: password.value
+                })
+
+            })
+            .then(res => res.json())
+            .then( data => {
+                if(data.name){
+                    alert('Log in successful');
+                } else {
+                    alert(data);
+                }
+
+            })
+           
+        })
+
+    }
+
+</script>
+
+
         <section class="nav-link">
             <nav style="gap: 750px;">
                 <a href="index.html"><img src="Images/new_logo_white-removebg-preview.png"></a>
@@ -36,7 +73,7 @@
                 <div>
                     <button class="submit-btn">Log in</button>
                     <div>
-                        <a href="#" class="login-link">Dont have an account? Click here</a>
+                        <a href="/register.html" class="login-link">Dont have an account? Click here</a>
                     </div>
                    
                 </div>

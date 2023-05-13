@@ -11,6 +11,37 @@
 <script src="script.js"></script>
     </head>                                  
     <body>
+        <script>
+            const name = document.querySelectorAll('.name input');
+            const email = document.querySelector('.email');
+            const password = document.querySelector('.password');
+            const submitBtn = document.querySelector('.submit-btn');
+          
+            if(name.length === 0){ // means login page is open
+            } else { // means register page is open
+                submitBtn.addEventListener('click', () => {
+                    fetch('/register-user', {
+                        method: 'post',
+                        headers: new Headers({'Content-Type': 'application/json'}),
+                        body: JSON.stringify({
+                            first_name: name[0].querySelector('input:first-child').value,
+                            last_name: name[0].querySelector('input:last-child').value,
+                            email: email.value,
+                            password: password.value
+                        })
+                    })
+                    .then(res => res.json())
+                    .then( data => {
+                        if(data.name){
+                            alert('Registration successful');
+                        } else {
+                            alert(data);
+                        }
+                    })
+                })
+            }
+          </script>
+        
         <section class="nav-link">
             <nav style="gap: 750px;">
                 <a href="index.html"><img src="Images/new_logo_white-removebg-preview.png"></a>
@@ -37,10 +68,11 @@
                 <input type="email" placeholder="Enter your e-mail" autocomplete="off" class="email" required>
                 <input type="password" placeholder="Enter your password" autocomplete="off" class="password" required>
                 <input type="password" placeholder="Repeat your password" autocomplete="off" class="password" required>
+                
                 <div>
                     <button class="submit-btn">Sign Up</button>
                     <div>
-                        <a href="#" class="login-link">Dont have an account? Click here</a>
+                        <a href="/login.html" class="login-link">Already have an account? Click here</a>
                     </div>
                    
                 </div>

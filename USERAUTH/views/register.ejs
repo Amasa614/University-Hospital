@@ -12,6 +12,53 @@
 
 <style>
 
+*{
+        margin: 0;
+        padding: 0;
+        font-family: 'Public Sans', sans-serif;
+}
+
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    width: 150px;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #086972;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
     .login-form {
         position: relative;
         width: 100%;
@@ -201,13 +248,13 @@
     </style>
     </head>                                  
     <body> 
-       <!---- <section class="nav-link">
+       <section class="nav-link">
             <nav style="gap: 750px;">
-                <a href="index.html"><img src="Images/new_logo_white-removebg-preview.png"></a>
+                <a href="/home"><img src="/images/new_logo_white-removebg-preview.png"></a>
                 <div class="nav-linkss" id="navLinks">
                     <div class="header-btns">
-                        <a href="login.html"><button class="header-login"> Login </button></a>
-                       <a href="register.html"><button class="header-signup"> Sign up </button></a> 
+                        <a href="/login"><button class="header-login"> Login </button></a>
+                        <a href="/register"><button class="header-signup"> Sign up </button></a> 
                     </div>
                 </div>
             </nav>
@@ -215,8 +262,7 @@
 
        <div class="alert-box">
             <p class="alert-msg">alert-msg</p>
-        </div> --> 
-
+        </div>
 
         <section class="login-form">
             <form action="/register" method="POST">

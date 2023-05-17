@@ -9,6 +9,522 @@
 <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="fontawesome-free-6.4.0-web/css/all.css">
 <script src="script.js"></script>
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: 'Public Sans', sans-serif;
+}
+
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    width: 150px;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #086972;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+
+    .text-box {
+        width: 100%;
+        color:white;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        align-items: center;
+        
+    }
+    
+    .text-box h1{
+        font-size: 62px;
+    }
+
+ .description {
+    width: 90%;
+    color: black;
+    position: relative;
+    text-align: left;
+    margin: auto;
+ }
+
+ .description h1 {
+margin-top: 64px;
+font-weight: 600;
+font-size: 44px;
+line-height: 56px;
+display: flex;
+align-items: center;
+text-align: center;
+color: #086972;
+ }
+
+
+ .dash {
+width: 100px;
+height: 6px;
+background: #086972;
+ }
+
+.description p {
+margin-top: 32px;
+font-weight: 400;
+font-size: 22px;
+line-height: 150%;
+display: flex;
+align-items: center;
+color: #000000;
+}
+
+.steps {
+    width: 90%;
+    color: black;
+    position: relative;
+    text-align: left;
+    margin: auto;
+ }
+
+ .steps h1 {
+margin-top: 64px;
+font-weight: 600;
+font-size: 44px;
+line-height: 56px;
+display: flex;
+align-items: center;
+text-align: center;
+color: #086972;
+ }
+
+
+ .dash {
+width: 100px;
+height: 6px;
+background: #086972;
+ }
+
+    .steps h3 {
+    margin-top: 24px;
+    margin-bottom: 24px;
+    font-size: 24px;  
+
+}
+
+.steps p {
+margin-top: 32px;
+font-weight: 400;
+font-size: 22px;
+line-height: 150%;
+display: flex;
+align-items: center;
+color: #000000;
+}
+
+.bullets{
+margin-top: 24px;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 8px;
+font-weight: 600;
+font-size: 22px;
+line-height: 120%;
+display: flex;
+align-items: auto;
+}
+
+.bullets ul li {
+    list-style-type: disc;
+    padding: auto;
+    gap: 24;
+    padding: 8px 16px;
+}
+
+.line {
+position: relative;
+width: 100%;
+height: 10px;
+background: #086972;
+}
+
+.dash-footer {
+width: 50px;
+height: 2px;
+background: #086972;
+}
+
+
+.footer-format {
+    width: 100%;
+    position: absolute;
+    height: 500px;
+    background-color: #F1F7F6;
+    margin-top: 48px;
+ }
+
+  .container {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    gap: 84px;
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .col {
+    width: auto;
+    height: auto;
+    float: left;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0px 20px 20px 20px;
+    
+  }
+
+  .col h4 {
+    margin-top: 24px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    color: #086972;
+
+  }
+
+  .col ul {
+    margin-top: 16px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .col ul li {
+    list-style: none;
+    color: black;
+    font-size: 14px;
+    font-family: inherit;
+    padding: 5px 0px 5px 0px;
+    cursor: pointer;
+    -moz-transition: .2s;
+    -webkit-transition: .2s;
+    transition: .2s;
+    margin-top: 12px;
+  }
+
+  .col ul li:hover {
+    color: #086972;
+    -moz-transition: .1s;
+    -webkit-transition: .1s;
+    transition: .1s;
+  }
+
+  .header-main {
+    height: 580px;
+    width: 100%;
+    background-position: center;
+    background-color: #F1F7F6;
+    background-size: cover;
+    position: relative;
+}
+
+
+.hero-text {
+position: relative;
+width: 721px;
+height: 230px;
+left: 68px;
+top: 120px;
+font-weight: 700;
+font-size: 64px;
+line-height: 76px;
+display: flex;
+align-items: center;
+color: #086972;
+
+}
+
+.hero-button {
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+position: absolute;
+width: 163px;
+height: 48px;
+left: 71px;
+top: 347px;
+}
+
+
+.course{
+    width: 85%;
+    margin: auto;
+    text-align: center;
+    padding-top: 96px;
+}
+
+.course h1 {
+    font-size: 64px;
+    font-weight: 650;
+    color: #086972;
+    bottom: 48px;
+    position: relative;
+}
+
+
+.course .p{
+    color: black;
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 33px;
+    padding: 10px;
+    position: absolute;
+    width: 1030px;
+    height: 66px;
+    left: 205px;
+    top: 1065px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+
+}
+
+.row {margin-top: 5%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.course-col{ 
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 41px 32px;
+    gap: 10px;
+    width: 407px;
+    height: 270px;
+    background: #FFFFFF;
+    box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+
+}
+
+.course-col:hover {
+    transform: translateY(-12px);
+    transition: all 0.2s ease-in-out;
+}
+
+
+h3 {
+    text-align: center;
+    font-weight: 600;
+    margin: 10px;
+    align-items: center;
+}
+
+
+.compass {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 77px;
+    position: relative;
+    width: 100%;
+    height: 408px;
+
+}
+.container-1 {
+    position: relative;
+    width: 200px;
+    height: auto;
+    top: 98px;
+    display: grid;
+    gap: 8px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+
+.box {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(2.5px);
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    width: 150px;
+    height: 150px;
+    box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, 0.08);
+    transition: 0.5ms;
+    cursor: pointer;
+}
+
+
+.box:hover {
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(2px);
+}
+
+.box svg {
+    align-items: center;
+    height: 48px;
+    width: 48px;
+    fill: #086972;
+    margin-top: 24px;
+}
+
+.box h3 {
+    color: #000000;
+    padding: auto;
+    font-size: 16px;
+}
+
+.hero-btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+    width: 163px;
+    height: 48px;
+    border-radius: 8px;
+    position: absolute;
+    left: auto;
+    top: 240px;
+}
+  
+.c-btn{
+    border: none;
+    height: 48px;
+    background-color: #086972;
+    padding: 12px 48px 12px 24px;
+    border-radius: 4px;
+    color: #fff;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='7.41' height='12' viewBox='0 0 7.41 12'%3E%3Cpath d='M10,6,8.59,7.41,13.17,12,8.59,16.59,10,18l6-6Z' transform='translate(-8.59 -6)' fill='%23fff'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 24px center;
+    cursor: pointer;
+    transition-duration: 0.12s;
+  }
+
+  .c-btn:hover {
+    background-color: #086972;
+    height: 50px;
+    width: 105%;
+
+  }
+
+
+.header-other {
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/Header\ image.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.bg-image {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 77px;
+    position: relative;
+    width: 100%;
+    height: 286px;
+
+}
+
+.counter-container{
+    background-color: white;
+    margin-top: auto;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+} 
+
+.col-sm {
+margin-bottom: 5px;
+box-sizing: border-box;
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 41px 32px;
+gap: 10px;
+width: 407px;
+height: auto;
+background: #FFFFFF;
+
+}
+ 
+.col-sm h3{
+    text-align: center;
+    font-size: 32px;
+    font-weight: 400;
+}
+.col-sm p{
+ text-align: center;
+ font-size: 32px;
+ font-weight: 400;
+ }
+
+ .counter-title {
+    text-align: center;
+    margin-top: 48px;
+    font-size: 64px;
+    font-weight: 700;
+    color: #086972
+ }
+
+ 
+</style>
     </head>
                                             
     <body>
@@ -50,11 +566,11 @@
                 <a href="index.html"><img src="/images/new_logo_white-removebg-preview.png"></a>
                 <div class="nav-links" id="navLinks">
                     <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="services.html">Our Services</a></li>
-                        <li><a href="">Students</a></li>
-                        <li><a href="USERAUTH\views\index.ejs">Staff</a></li>
+                        <li><a href="/home">Home</a></li>
+                        <li><a href="/about">About Us</a></li>
+                        <li><a href="/services">Our Services</a></li>
+                        <li><a href="/login">Students</a></li>
+                        <li><a href="/login">Staff</a></li>
                     </ul>
                 </div>
             </nav>

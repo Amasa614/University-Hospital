@@ -49,6 +49,18 @@ app.get("/register", (req, res) => {
   res.render("register.ejs");
 });
 
+app.get("/home", (req, res) => {
+  res.render("home.ejs");
+});
+
+app.get("/services", (req, res) => {
+  res.render("services.ejs");
+});
+
+app.get("/about", (req, res) => {
+  res.render("about.ejs");
+});
+
 app.post(
   "/login",
   passport.authenticate("local", {
